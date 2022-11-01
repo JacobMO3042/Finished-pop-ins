@@ -1,0 +1,138 @@
+*{
+    margin:0pt 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(36, 36, 36);
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 3rem;
+    text-align: center;
+    color: beige;
+}
+header{
+    height: 600px;
+/* line-height: centers text */
+    line-height: 600px;
+    border: rgb(116, 81, 116) 1px solid;
+}
+#container{
+    width: 800px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.scroll-element{
+    height: 600px;
+    line-height: 600px;
+}
+#content1{
+    background-color: rgb(83, 119, 83);
+}
+#content2{
+    background-color: rgb(151, 104, 104);
+}
+#content3{
+    background-color: rgb(101, 134, 123);
+}
+#content4{
+    background-color: rgb(134, 123, 106);
+}
+#content5{
+    background-color: rgb(176, 202, 123);
+}
+#content6{
+    background-color: rgb(150, 172, 172);
+}
+.js-scroll{
+    opacity: 0;
+}
+.scrolled.fade-in{
+animation: fade-in 1s ease-in-out both;
+}
+.scrolled.slide-left{
+    animation: slide-in-left 1s ease-in-out both;
+}
+.scrolled.slide-right{
+    animation: slide-in-right 1s ease-in-out both;
+}
+.scrolled.slide-bottom{
+    animation: slide-in-bottom 1s ease-in-out both;
+}
+.scrolled.Animation1{
+    animation: Animation1 1s ease-in-out both;
+}
+/* keyframe animations */
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes slide-in-right {
+    0%{
+        transform:translateX(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes slide-in-left {
+    0%{
+        transform:translateX(-200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }   
+}
+@keyframes slide-in-bottom {
+    0%{
+        transform:translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }   
+}
+@keyframes Animation1 {
+    0%{
+        transform: rotate(20deg);
+        opacity: 0;
+    }
+    15%{
+        transform: rotate(-17deg);
+        opacity: 1;
+    
+    }
+    30%{
+        transform: rotate(15deg);
+        opacity: 1;
+    }
+    45%{
+        transform: rotate(-12deg);
+        opacity: 1;
+    }
+    60%{
+        transform: rotate(7deg);
+        opacity: 1;
+    }
+    75%{
+        transform: rotate(-4deg);
+    }
+    90%{
+        transform: rotate(2deg);
+    }
+    100%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
